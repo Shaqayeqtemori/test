@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سامانه ثبت و گزارش گوشی</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Header -->
+<header class="bg-blue-600 text-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+        <h1 class="text-xl font-bold">📱 سامانه گوشی‌های مفقود</h1>
+        <nav class="space-x-4 rtl:space-x-reverse">
+            <a href="#" class="hover:underline">خانه</a>
+            <a href="#register" class="hover:underline">ثبت گوشی</a>
+            <a href="#report" class="hover:underline">گزارش مفقودی</a>
+            <a href="#login" class="hover:underline">ورود</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-white">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-6 items-center p-6">
+        <div>
+            <h2 class="text-2xl font-bold mb-4">گوشی خود را ثبت کنید یا مفقودی آن را گزارش دهید</h2>
+            <p class="mb-6 text-gray-600">با ثبت اطلاعات گوشی، در صورت گم‌شدن یا سرقت، شانس پیدا شدن آن را افزایش دهید.</p>
+            <div class="flex gap-3">
+                <a href="#register" class="bg-blue-600 text-white px-4 py-2 rounded-lg">ثبت گوشی</a>
+                <a href="#report" class="bg-red-500 text-white px-4 py-2 rounded-lg">گزارش مفقودی</a>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="mobile" class="rounded-xl shadow-lg max-h-72">
+        </div>
+    </div>
+</section>
+
+<!-- Register Phone -->
+<section id="register" class="max-w-7xl mx-auto p-6">
+    <h3 class="text-xl font-bold mb-4">📌 ثبت گوشی</h3>
+    <div class="bg-white p-6 rounded-xl shadow">
+        <form class="grid md:grid-cols-2 gap-4">
+            <input type="text" placeholder="نام مالک" class="border p-2 rounded">
+            <input type="text" placeholder="شماره تماس" class="border p-2 rounded">
+            <input type="text" placeholder="مدل گوشی" class="border p-2 rounded">
+            <input type="text" placeholder="شماره IMEI" class="border p-2 rounded">
+            <textarea placeholder="توضیحات بیشتر" class="border p-2 rounded md:col-span-2"></textarea>
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg md:col-span-2">ثبت اطلاعات</button>
+        </form>
+    </div>
+</section>
+
+<!-- Report Lost -->
+<section id="report" class="max-w-7xl mx-auto p-6">
+    <h3 class="text-xl font-bold mb-4">🚨 گزارش گوشی گمشده</h3>
+    <div class="bg-white p-6 rounded-xl shadow">
+        <form class="grid md:grid-cols-2 gap-4">
+            <input type="text" placeholder="شماره IMEI" class="border p-2 rounded">
+            <input type="date" class="border p-2 rounded">
+            <input type="text" placeholder="محل تقریبی گم‌شدن" class="border p-2 rounded md:col-span-2">
+            <textarea placeholder="شرح حادثه" class="border p-2 rounded md:col-span-2"></textarea>
+            <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded-lg md:col-span-2">ارسال گزارش</button>
+        </form>
+    </div>
+</section>
+
+<!-- Login -->
+<section id="login" class="bg-gray-200">
+    <div class="max-w-md mx-auto p-6">
+        <h3 class="text-xl font-bold mb-4 text-center">🔐 ورود کاربران</h3>
+        <div class="bg-white p-6 rounded-xl shadow">
+            <form class="space-y-4">
+                <input type="text" placeholder="شماره تماس یا ایمیل" class="border p-2 rounded w-full">
+                <input type="password" placeholder="رمز عبور" class="border p-2 rounded w-full">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full">ورود</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-center p-4 mt-6">
+    <p>© 2025 سامانه ثبت و گزارش گوشی | طراحی شده توسط شما</p>
+</footer>
+
+</body>
+</html>
